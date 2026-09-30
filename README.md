@@ -6,7 +6,22 @@ Plataforma web multiempresa que desenvolvi sozinho, do banco de dados à interfa
 
 > O código-fonte é privado, porque o sistema é um produto em desenvolvimento para uso comercial. Este repositório documenta a arquitetura e as decisões técnicas. Posso mostrar o código em uma entrevista.
 
-![Cardápio de um restaurante](docs/cardapio.png)
+![Painel da cozinha](docs/admin-cozinha.png)
+
+## Painel do restaurante
+
+O foco do sistema é o painel de gestão usado pelo dono do restaurante e pela equipe. Os prints abaixo usam um restaurante de demonstração com dados fictícios.
+
+| Financeiro: faturamento, custo (CMV) e margem | Estoque de insumos com alerta de estoque baixo |
+| --- | --- |
+| ![Financeiro](docs/admin-financeiro.png) | ![Insumos](docs/admin-insumos.png) |
+| **Pedidos por status** | **Fichas técnicas dos produtos** |
+| ![Pedidos](docs/admin-pedidos.png) | ![Composições](docs/admin-composicoes.png) |
+
+Por trás dessas telas:
+- Cada pedido dá **baixa automática no estoque** a partir da ficha técnica de cada produto, e um cancelamento **devolve os insumos** ao estoque.
+- O **CMV** (custo da mercadoria vendida) e a margem são calculados a partir dessas baixas, só com pedidos concluídos.
+- Relatórios de faturamento e ranking de produtos exportáveis em CSV.
 
 ## As três frentes
 
@@ -85,7 +100,11 @@ O total do pedido é sempre **calculado no servidor**; o valor enviado pelo nave
 
 Os requisitos de compras, insumos e cadastro fiscal foram levantados com pessoas do ramo de restaurantes.
 
-![Página inicial do site de pedidos](docs/inicio.png)
+### Site de pedidos do cliente
+
+| Página inicial | Cardápio |
+| --- | --- |
+| ![Página inicial do site de pedidos](docs/inicio.png) | ![Cardápio de um restaurante](docs/cardapio.png) |
 
 ## Tecnologias
 
