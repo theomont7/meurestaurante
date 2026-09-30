@@ -4,7 +4,7 @@ Plataforma web multiempresa que desenvolvi sozinho, do banco de dados à interfa
 
 **Site de pedidos ao vivo:** https://meurestaurante-five.vercel.app · [cardápio de exemplo](https://meurestaurante-five.vercel.app/r/pizzaria-teste)
 
-> O código-fonte é privado, porque o sistema é um produto em desenvolvimento para uso comercial. Este repositório documenta a arquitetura e as decisões técnicas. Posso mostrar o código em uma entrevista.
+> O código-fonte é privado, porque o sistema é um produto em desenvolvimento para uso comercial. Este repositório documenta a arquitetura e as decisões técnicas. Posso mostrar o código eu mesmo.
 
 ![Painel da cozinha](docs/admin-cozinha.png)
 
